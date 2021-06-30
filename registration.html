@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>University of Learning</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo.png" alt="university logo" />
+      </div>
+      <h1 class="title">University of Learning</h1>
+    </header>
+
+    <section class="main">
+      <div class="options">
+        <a href="/">
+          <div class="option-img">
+            <img src="/images/home.svg" alt="home icon" />
+          </div>
+          <p>Home</p>
+        </a>
+        <a href="/programme-list.html">
+          <div class="option-img">
+            <img src="/images/list.svg" alt="home icon" />
+          </div>
+          <p>Programme List</p>
+        </a>
+        <a href="/registration.html">
+          <div class="option-img">
+            <img src="/images/form.svg" alt="home icon" />
+          </div>
+          <p>Registration</p>
+        </a>
+        <a href="/important-dates.html">
+          <div class="option-img">
+            <img src="/images/calendar.svg" alt="home icon" />
+          </div>
+          <p>Important Dates</p>
+        </a>
+      </div>
+
+      <div class="data">
+        <h2>Registration From</h2>
+
+        <form class="registration-form" action="/registration.html">
+          <div class="form-input">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <label class="validation-text name-label" for="name"></label>
+          </div>
+          <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <label class="validation-text email-label" for="email"></label>
+          </div>
+          <div class="form-input">
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" />
+            <label class="validation-text number-label" for="phone"></label>
+          </div>
+          <div class="form-input select">
+            <label for="qualification">Qualification</label>
+            <select name="qualification" id="qualification">
+              <option value="Indermediate">Indermediate</option>
+              <option value="High School">High School</option>
+              <option value="BCA">BCA</option>
+              <option value="MCA">MCA</option>
+              <option value="BSC">BSC</option>
+              <option value="BA">BA</option>
+            </select>
+          </div>
+          <div class="form-input select">
+            <label for="programme">Programme</label>
+            <select name="programme" id="programme">
+              <option value="BCA">BCA</option>
+              <option value="MCA">MCA</option>
+              <option value="BSC">BSC</option>
+              <option value="BA">BA</option>
+              <option value="Indermediate">Indermediate</option>
+              <option value="High School">High School</option>
+            </select>
+          </div>
+          <button>Register</button>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

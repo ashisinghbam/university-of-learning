@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  padding: 0.6em;
+  background-color: #20836e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.45);
+  min-height: 6.5em;
+  position: relative;
+  min-height: 15vh;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12em;
+}
+
+.logo img {
+  width: 6em;
+  height: 6em;
+  box-shadow: 0 0 20px rgba(198, 146, 20, 0.25);
+  border-radius: 50%;
+}
+
+a img {
+  width: 3em;
+}
+
+.options a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.options {
+  background: #20836e;
+  padding: 2em 0em;
+  min-width: 12em;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+.option-img {
+  box-shadow: 0 6px 10px rgba(31, 49, 64, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+.option-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(31, 49, 64, 0.4);
+}
+
+.data {
+  padding: 2em;
+  background-color: #1f3140;
+  background-color: #16242f;
+  color: #fff;
+  margin-left: 12em;
+  width: 100%;
+
+  min-height: 85vh;
+}
+
+.data h2 {
+  text-align: center;
+  font-size: 1.6em;
+  color: #9cbc7a;
+}
+
+.main {
+  display: flex;
+}
+
+.text-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.university-img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.university-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #1d574a;
+  /* text-align: left; */
+}
+
+td:hover {
+  background-color: #2d485e;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.date {
+  background-color: #1f3140;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  margin-bottom: 2em;
+  transition: all 0.1s ease-in-out;
+}
+
+.date h3 {
+  color: #e891da;
+  text-transform: uppercase;
+}
+
+.date li {
+  margin-bottom: 1em;
+}
+
+.date:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  background-color: #e7ecff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  width: 25em;
+  padding: 2em;
+  color: #666;
+}
+
+label {
+  font-size: 0.75em;
+  color: #666;
+  margin-bottom: 0.5em;
+  margin-left: 0.75em;
+}
+
+.form-input {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input,
+.form-input select {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1em 1.5em;
+  border-radius: 5em;
+}
+
+.form-input select {
+  appearance: none;
+  position: relative;
+}
+
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: '';
+  color: black;
+  position: absolute;
+  right: 1em;
+  top: 2.7em;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #27292ddc;
+}
+
+button {
+  background: #fff;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.253);
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  font-size: 1.25em;
+  background: #1d574a;
+  color: #fff;
+}
+
+button:hover {
+  background: #1e4e44;
+  color: rgb(255, 255, 255);
+}
+
+.validation-text {
+  color: rgba(255, 38, 0, 0.931);
+}
